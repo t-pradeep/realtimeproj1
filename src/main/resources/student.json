@@ -1,0 +1,22 @@
+[
+{
+	"name":"Krish",
+	"batch":"BC15",
+	"ccStatus":"Y",
+	"placedStatus":"Y",
+	"degree":"BE",
+	"score":7.8,
+	"dob":"1984-08-06"
+},
+{
+	"name":"Lakshman",
+	"batch":"BC15",
+	"ccStatus":"Y",
+	"placedStatus":"Y",
+	"degree":"BE",
+	"score":7.8,
+	"dob":"1984-01-16"
+}
+
+
+]
