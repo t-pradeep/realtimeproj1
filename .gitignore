@@ -1,5 +1,20 @@
-.classpath
-.project
-.settings
+.DS_Store
+
+*.class
+
+bin/
+.settings/
 log/
+
+# Eclipse files
+.project
+.classpath
+.metadata/
+
+# Maven files
 target/
+
+# Package Files #
+*.jar
+*.war
+*.ear
