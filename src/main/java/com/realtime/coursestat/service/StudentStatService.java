@@ -1,10 +1,10 @@
-package com.realtime.proj1.service;
+package com.realtime.coursestat.service;
 
 import java.util.List;
 import java.util.function.Predicate;
 
-import com.realtime.proj1.domain.Student;
-import com.realtime.proj1.dto.PlacementCount;
+import com.realtime.coursestat.domain.Student;
+import com.realtime.coursestat.dto.PlacementCount;
 
 public interface StudentStatService {
 

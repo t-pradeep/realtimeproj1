@@ -1,4 +1,4 @@
-package com.realtime.proj1.quizdomain;
+package com.realtime.quiz.quizdomain;
 
 public interface QuizService {
 	void startService();

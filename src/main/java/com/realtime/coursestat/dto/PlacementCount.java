@@ -1,4 +1,4 @@
-package com.realtime.proj1.dto;
+package com.realtime.coursestat.dto;
 
 import lombok.Getter;
 import lombok.Setter;

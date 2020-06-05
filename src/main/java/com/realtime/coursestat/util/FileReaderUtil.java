@@ -1,4 +1,4 @@
-package com.realtime.proj1.util;
+package com.realtime.coursestat.util;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.realtime.proj1.domain.CCStatus;
-import com.realtime.proj1.domain.PlacedStatus;
-import com.realtime.proj1.domain.Student;
+import com.realtime.coursestat.domain.CCStatus;
+import com.realtime.coursestat.domain.PlacedStatus;
+import com.realtime.coursestat.domain.Student;
 
 
 

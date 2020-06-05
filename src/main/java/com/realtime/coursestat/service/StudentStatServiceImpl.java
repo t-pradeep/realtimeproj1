@@ -1,14 +1,14 @@
-package com.realtime.proj1.service;
+package com.realtime.coursestat.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import com.realtime.proj1.domain.PlacedStatus;
-import com.realtime.proj1.domain.Student;
-import com.realtime.proj1.dto.PlacementCount;
-import com.realtime.proj1.util.FileReaderUtil;
+import com.realtime.coursestat.domain.PlacedStatus;
+import com.realtime.coursestat.domain.Student;
+import com.realtime.coursestat.dto.PlacementCount;
+import com.realtime.coursestat.util.FileReaderUtil;
 
 public class StudentStatServiceImpl implements StudentStatService {
 

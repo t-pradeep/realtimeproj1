@@ -1,11 +1,12 @@
+package com.realtime.coursestat;
 import java.util.List;
 
-import com.realtime.proj1.domain.PlacedStatus;
-import com.realtime.proj1.domain.Student;
-import com.realtime.proj1.dto.PlacementCount;
-import com.realtime.proj1.service.StudentStatService;
-import com.realtime.proj1.service.StudentStatServiceImpl;
-import com.realtime.proj1.util.FileReaderUtil;
+import com.realtime.coursestat.domain.PlacedStatus;
+import com.realtime.coursestat.domain.Student;
+import com.realtime.coursestat.dto.PlacementCount;
+import com.realtime.coursestat.service.StudentStatService;
+import com.realtime.coursestat.service.StudentStatServiceImpl;
+import com.realtime.coursestat.util.FileReaderUtil;
 
 public class Manager {
 

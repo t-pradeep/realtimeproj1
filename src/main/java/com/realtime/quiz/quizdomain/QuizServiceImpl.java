@@ -1,4 +1,4 @@
-package com.realtime.proj1.quizdomain;
+package com.realtime.quiz.quizdomain;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,20 +13,10 @@ public class QuizServiceImpl implements QuizService {
 	private List<String> enteredAnswers;
 	private int correctCount;
 
-	public QuizServiceImpl() {
+	public QuizServiceImpl() throws JsonParseException {
 		enteredAnswers=new ArrayList<String>();
 		correctCount=0;
-		try {
-
-			quiz = JsonReaderUtil.readJSON();
-
-		} catch (JsonParseException e) {
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		quiz = JsonReaderUtil.loadDataFromJSONFile();
 	}
 
 	@Override

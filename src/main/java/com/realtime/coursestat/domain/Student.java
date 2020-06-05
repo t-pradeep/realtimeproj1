@@ -1,4 +1,4 @@
-package com.realtime.proj1.domain;
+package com.realtime.coursestat.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
