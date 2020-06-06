@@ -1,4 +1,4 @@
-package com.realtime.employeestat;
+package com.realtime.employeestat.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -8,13 +8,18 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Setter
 @Getter
-@ToString
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 //@JsonIdentityInfo(generator = ObjectIdGenerators.UUIDGenerator.class, property = "@deptno")
 public class Dept implements Serializable {
 

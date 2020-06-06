@@ -1,4 +1,4 @@
-package com.realtime.employeestat;
+package com.realtime.employeestat.dto;
 
 import java.util.OptionalDouble;
 

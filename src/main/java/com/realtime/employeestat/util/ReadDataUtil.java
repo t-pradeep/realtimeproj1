@@ -1,4 +1,4 @@
-package com.realtime.employeestat;
+package com.realtime.employeestat.util;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -7,6 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.realtime.employeestat.domain.Dept;
+import com.realtime.employeestat.domain.Employee;
 
 public class ReadDataUtil {
 

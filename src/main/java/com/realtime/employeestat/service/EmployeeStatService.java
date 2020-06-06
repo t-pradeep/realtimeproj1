@@ -1,6 +1,10 @@
-package com.realtime.employeestat;
+package com.realtime.employeestat.service;
 
 import java.util.List;
+
+import com.realtime.employeestat.domain.Dept;
+import com.realtime.employeestat.domain.Employee;
+import com.realtime.employeestat.dto.SalStat;
 
 public interface EmployeeStatService {
 	List<Employee> getEmployeeByDept(int deptno);
