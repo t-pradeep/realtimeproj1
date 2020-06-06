@@ -1,4 +1,4 @@
-package com.lwl.ems.dao;
+package com.lwl.ems.service;
 
 import java.util.List;
 
@@ -6,7 +6,8 @@ import com.lwl.ems.domain.Dept;
 import com.lwl.ems.domain.Employee;
 import com.lwl.ems.dto.SalStat;
 
-public interface EmployeeDao {
+public interface EmployeeService {
+
 	List<Employee> getEmployeeByDept(int deptno);
 
 	List<Employee> maxSalaryEmployees();
@@ -22,7 +23,9 @@ public interface EmployeeDao {
 	List<String> allManagerNames();
 
 	List<Employee> whoJoinDayIs(String dayName);
+
 	int addEmployees(List<Employee> list);
 
 	int addDepartements(List<Dept> list);
+
 }
