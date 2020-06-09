@@ -1,4 +1,5 @@
-package com.lwl.ems.domain;
+package com.realtime.employeestat.domain;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +7,7 @@ import java.util.List;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,18 +17,18 @@ import lombok.Setter;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-//@JsonIdentityInfo(generator = ObjectIdGenerators.UUIDGenerator.class, property = "@deptno")
+@EqualsAndHashCode
 public class Dept implements Serializable {
 
- private Integer deptno;
- private String dname;
- private String location;
- @Setter(value = AccessLevel.NONE)
- private List<Employee> empList = new ArrayList<Employee>();
- 
- public Employee addEmployee(Employee emp) {
-  this.empList.add(emp);
-  return emp;
- }
- 
+	private Integer deptno;
+	private String dname;
+	private String location;
+	@Setter(value = AccessLevel.NONE)
+	private List<Employee> empList = new ArrayList<Employee>();
+
+	public Employee addEmployee(Employee emp) {
+		this.empList.add(emp);
+		return emp;
+	}
+
 }

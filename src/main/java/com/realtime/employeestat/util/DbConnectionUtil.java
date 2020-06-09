@@ -1,4 +1,4 @@
-package com.lwl.ems.util;
+package com.realtime.employeestat.util;
 
 import java.io.IOException;
 import java.sql.CallableStatement;
@@ -16,7 +16,7 @@ public enum DbConnectionUtil {
 	private static final Properties PROPERTIES = new Properties();
 	static {
 		try {
-			PROPERTIES.load(DbConnectionUtil.class.getResourceAsStream("/db.properties"));
+			PROPERTIES.load(DbConnectionUtil.class.getResourceAsStream("/application.properties"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

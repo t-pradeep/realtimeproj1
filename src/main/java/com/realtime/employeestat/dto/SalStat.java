@@ -1,4 +1,4 @@
-package com.lwl.ems.dto;
+package com.realtime.employeestat.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

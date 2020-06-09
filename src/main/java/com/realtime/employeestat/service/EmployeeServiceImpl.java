@@ -1,14 +1,14 @@
-package com.lwl.ems.service;
+package com.realtime.employeestat.service;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
 
-import com.lwl.ems.dao.EmployeeDao;
-import com.lwl.ems.dao.EmployeeDaoImpl;
-import com.lwl.ems.domain.Dept;
-import com.lwl.ems.domain.Employee;
-import com.lwl.ems.dto.SalStat;
+import com.realtime.employeestat.dao.EmployeeDao;
+import com.realtime.employeestat.dao.EmployeeDaoImpl;
+import com.realtime.employeestat.domain.Dept;
+import com.realtime.employeestat.domain.Employee;
+import com.realtime.employeestat.dto.SalStat;
 
 public class EmployeeServiceImpl implements EmployeeService {
 
@@ -20,32 +20,29 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public List<Employee> getEmployeeByDept(int deptno) {
-		// TODO Auto-generated method stub
-		return null;
+		assertTrue(deptno > 0);
+		return employeeDao.getEmployeeByDept(deptno);
+
 	}
 
 	@Override
 	public List<Employee> maxSalaryEmployees() {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeDao.maxSalaryEmployees();
 	}
 
 	@Override
 	public Dept getDeptWhichHasMaxNumberOfEmployee() {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeDao.getDeptWhichHasMaxNumberOfEmployee();
 	}
 
 	@Override
 	public List<Employee> getEmployeesWithManagers() {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeDao.getEmployeesWithManagers();
 	}
 
 	@Override
 	public SalStat getSalStatOfOrganization() {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeDao.getSalStatOfOrganization();
 	}
 
 	@Override
@@ -57,26 +54,24 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public List<String> allManagerNames() {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeDao.allManagerNames();
 	}
 
 	@Override
 	public List<Employee> whoJoinDayIs(String dayName) {
-		// TODO Auto-generated method stub
-		return null;
+		assertTrue(dayName.length() > 0);
+		return employeeDao.whoJoinDayIs(dayName);
+
 	}
 
 	@Override
 	public int addEmployees(List<Employee> list) {
-		// TODO Auto-generated method stub
-		return 0;
+		return employeeDao.addEmployees(list);
 	}
 
 	@Override
 	public int addDepartements(List<Dept> list) {
-		// TODO Auto-generated method stub
-		return 0;
+		return employeeDao.addDepartements(list);
 	}
 
 }

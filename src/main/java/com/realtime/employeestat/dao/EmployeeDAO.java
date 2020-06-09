@@ -1,10 +1,10 @@
-package com.lwl.ems.dao;
+package com.realtime.employeestat.dao;
 
 import java.util.List;
 
-import com.lwl.ems.domain.Dept;
-import com.lwl.ems.domain.Employee;
-import com.lwl.ems.dto.SalStat;
+import com.realtime.employeestat.domain.Dept;
+import com.realtime.employeestat.domain.Employee;
+import com.realtime.employeestat.dto.SalStat;
 
 public interface EmployeeDao {
 	List<Employee> getEmployeeByDept(int deptno);
@@ -22,6 +22,7 @@ public interface EmployeeDao {
 	List<String> allManagerNames();
 
 	List<Employee> whoJoinDayIs(String dayName);
+
 	int addEmployees(List<Employee> list);
 
 	int addDepartements(List<Dept> list);

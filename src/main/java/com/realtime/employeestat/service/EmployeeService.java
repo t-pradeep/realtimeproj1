@@ -1,10 +1,10 @@
-package com.lwl.ems.service;
+package com.realtime.employeestat.service;
 
 import java.util.List;
 
-import com.lwl.ems.domain.Dept;
-import com.lwl.ems.domain.Employee;
-import com.lwl.ems.dto.SalStat;
+import com.realtime.employeestat.domain.Dept;
+import com.realtime.employeestat.domain.Employee;
+import com.realtime.employeestat.dto.SalStat;
 
 public interface EmployeeService {
 
