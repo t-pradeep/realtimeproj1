@@ -11,7 +11,6 @@ import com.realtime.coursestat.util.FileReaderUtil;
 public class Manager {
 
 	public static void main(String[] args) {
-		List<Student> students = FileReaderUtil.getStudentDetailsFromFile("coursedata.csv");
 
 		StudentStatService service = new StudentStatServiceImpl();
 

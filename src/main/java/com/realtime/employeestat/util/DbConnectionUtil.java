@@ -1,31 +1,27 @@
 package com.realtime.employeestat.util;
 
-import java.io.IOException;
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Properties;
+
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 
 public enum DbConnectionUtil {
+
 	dbutil;
 
-	private static final Properties PROPERTIES = new Properties();
-	static {
-		try {
-			PROPERTIES.load(DbConnectionUtil.class.getResourceAsStream("/application.properties"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	private static final HikariConfig CONFIG = new HikariConfig(
+			DbConnectionUtil.class.getResource("/hikaricp.properties").getPath());;
+	private static HikariDataSource dataSource = new HikariDataSource(CONFIG);
 
-	public Connection getConnection() {
+	public Connection getConnection() throws SQLException {
 		Connection con = null;
 		try {
-			con = DriverManager.getConnection(PROPERTIES.getProperty("url"), PROPERTIES);
+			con = dataSource.getConnection();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

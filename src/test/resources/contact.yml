@@ -1,0 +1,25 @@
+contact:
+  - name: pradeep
+    email: pradeep@gmail.com
+    mobile: 12345670
+    address:
+      city: Hyderabad
+      state: TS
+  - name: praveen
+    email: praveen@gmail.com
+    mobile: 987654321
+    address:
+      city: Hyderabad
+      state: TS
+  - name: santhosh
+    email: santhos@gmail.com
+    mobile: 3663739929
+    address:
+      city: Mumbai
+      state: MH
+  - name: arun
+    email: arun@gmail.com
+    mobile: 4748374847
+    address:
+      city: Nalgonda
+      state: TS
